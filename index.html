@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #botaoTopo {
+            position: fixed; /* Ficará fixo na tela */
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+            opacity: 0; /* Opacidade inicial para criar uma transição suave */
+            transition: opacity 0.3s ease-in-out; /* Transição suave */
+            display: none; /* O botão ficará oculto por padrão */
+        }
+    </style>
+
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+
+
+    <!-- Menu e logo -->
+    <header class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="./index.html">Miguel's<span class="part2-logo"> StackScap</span></a>
+            </div class=menu>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="about">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
+                        <ul class="navbar-dropdown">
+                            <li><a href="https://devmgdp.github.io/Project-RegisterAndLogin/">Register and Login</a></li>
+                            <li><a href="https://devmgdp.github.io/Mario-Jump/index.html">Mario Jump</a>
+                            </li>
+                            <li><a href="https://devmgdp.github.io/Calculator/">Calculator</a>
+                            </li>
+                            <li><a href="https://devmgdp.github.io/TechBlog/">Tech Blog</a></li>
+                            <li><a href="https://github.com/devmgdp/lojavirtualnode">Virtual Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="https://api.whatsapp.com/send/?phone=5521969270158&text&type=phone_number&app_absent=0">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Home - início -->
+    <section class="home" class="anime" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hy, my name is</div>
+                <div class="text-2">Miguel Gonçalves</div>
+                <div class="text-3">
+                    <p>I am<span class="typed-text"></span> <span class="cursor">&nbsp;</span></p>
+                </div>
+                <a href="https://github.com/devmgdp" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section> <!-- Home - fim -->
+
+
+    <!-- Seção sobre mim- início -->
+    <section class="about" class="anime" id="about">
+        <div class="max-width">
+            <h2 class="title">About</h2>
+            <div class="about-content">
+                <div class="column-left">
+                    <img src="./img/foto-minha.jpeg">
+                </div>
+                <div class="column-right">
+                    <div class="text div-about">
+                        My name is Miguel, I am a <span class="span-about">FullStack Developer</span>
+                    </div>
+                    <div class="text div-portugues">
+                        Meu nome é Miguel, eu sou <span class="span-portugues">Desenvolvedor FulStack</span>
+                    </div>
+                    <p class="p-about">
+                        I am passionate about programming for over 4 years. 
+                        I have experience in JavaScript, exploring frameworks like React.js, AJAX, and Node.js, and studying Golang. 
+                        I also work with PHP, Python, and integration of SQL, MySQL, and NoSQL databases. 
+                        In these 4 years, I have carried out challenging projects, where I apply my knowledge and passion for technology. 
+                        Each challenge is an opportunity for constant learning. 
+                        I am eager to contribute with my dedication and skills in the world of programming.
+                        <p class="about-portugues">Eu sou apaixonado por programação há mais de 4 anos. Tenho experiência em JavaScript, explorando frameworks como React.js, AJAX e Node.js, além de estudar Golang. Também trabalho com PHP, Python e integração de bancos de dados SQL, MySQL e NoSQL. Nesses 4 anos realizei projetos desafiadores, onde aplico meu conhecimento e paixão pela tecnologia. Cada desafio é uma oportunidade de aprendizado constante. Estou ansioso para contribuir com minha dedicação e habilidades no mundo da programação.
+                        </p>
+                        <div class="translate">
+                            <a href="">
+                                <img src="img/tradutor.png" alt="">
+                            </a>                        
+                        </div>
+                    </p>
+                    <a href="https://drive.google.com/file/d/1zevqIa5sIhHJ4CM1M1tcxzPtSuGrvUDD/view?usp=drive_link" download="meu-curriculo-fullstack.pdf" class="cv">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="voltarAoTopo()" id="botaoTopo" title="Ir para o topo">↑</button>
+    </section> <!-- Fim da seção sobre -->
+
+
+    <!-- Seção Projects- início -->
+    <section class="projects" class="anime" id="projects">
+        <div class="max-width">
+            <h2 class="title">Projetos</h2>
+            <div class="project-content">
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="text">Register and Login</div>
+                        <img src="./img/project-register.png" alt="foto do projeto" width="500">
+                        <p class="p-project">
+                            para ver o projeto 
+                            <a href="https://devmgdp.github.io/Project-RegisterAndLogin/" target="_blank" class="link-project">
+                                Clique Aqui
+                            </a>
+                        </p>
+                        <p>
+                            Para ver o repositório 
+                            <a href="https://github.com/devmgdp/Project-RegisterAndLogin" target="_blank" class="link-github">
+                                Clique Aqui
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="text">Mario Jump</div>
+                        <img src="./img/mario-jump.png" alt="foto do projeto" width="500">
+                        <p class="p-project">
+                            para ver o projeto 
+                            <a href="https://devmgdp.github.io/Mario-Jump/index.html" target="_blank" class="link-project">
+                                Clique Aqui
+                            </a>
+                        </p>
+                        <p>
+                            Para ver o repositório 
+                            <a href="https://github.com/devmgdp/Mario-Jump" target="_blank" class="link-github">
+                                Clique Aqui
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="text">Calculadora</div>
+                        <img src="./img/calculator.png" alt="foto do projeto" width="500">
+                        <p class="p-project">
+                            para ver o projeto 
+                            <a href="https://devmgdp.github.io/Calculator/" target="_blank" class="link-project">
+                                Clique Aqui
+                            </a>
+                        </p>
+                        <p>
+                            Para ver o repositório 
+                            <a href="https://github.com/devmgdp/Calculator" target="_blank" class="link-github">
+                                Clique Aqui
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="text">Espaço Folha Raiz</div>
+                        <img src="./img/folharaiz.png" alt="foto do projeto" width="500">
+                        <p class="p-project">
+                            Este site está em <span class="span-red">desenvolvimento!</span>
+                        </p>
+                        <p>
+                            Para ver o repositório 
+                            <a href="" target="_blank" class="link-github link-desen">
+                                Clique Aqui
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="text">Tech Blog</div>
+                        <img src="./img/tech-blog-project.png" alt="foto do projeto" width="500">
+                        <p class="p-project">
+                            para ver o projeto 
+                            <a href="https://devmgdp.github.io/TechBlog/" target="_blank" class="link-project">
+                                Clique Aqui
+                            </a>
+                        </p>
+                        <p>
+                            Para ver o repositório 
+                            <a href="https://github.com/devmgdp/TechBlog" target="_blank" class="link-github">
+                                Clique Aqui
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                        <div class="text">Loja Virtual</div>
+                        <img src="./img/ecommerce.png" alt="foto do projeto" width="500">
+                        <p class="p-project">
+                            para ver o projeto 
+                            <a href="https://github.com/devmgdp/lojavirtualnode" target="_blank" class="link-project">
+                                Clique Aqui
+                            </a>
+                        </p>
+                        <p>
+                            Para ver o repositório 
+                            <a href="https://github.com/devmgdp/lojavirtualnode" target="_blank" class="link-github">
+                                Clique Aqui
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- Fim da seção Projects -->
+
+
+    <!-- Seção skills - início -->
+    <section class="skills" class="anime" id="skills">
+        <div class="max-width">
+            <h2 class="title">Habilidades</h2>
+            <div class="skills-content">
+                <div class="column-left">
+                    <div class="text">Minhas habilidades</div>
+                    <p class="skills">
+                        Sou um desenvolvedor fullstack com mais de 4 anos de experiência. 
+                        Meu foco principal está no JavaScript, onde domino frameworks como React.js, AJAX e Node.js. 
+                        Atualmente, estou ampliando meu conhecimento em Golang e também tenho proficiência em PHP e Python.
+                        Além das linguagens, sou versátil em lidar com diversos bancos de dados, incluindo SQL, MySQL e NoSQL, para garantir a integração perfeita com minhas aplicações em JavaScript. 
+                        Tenho uma base sólida em HTML e CSS para criar interfaces responsivas e intuitivas.
+                        Minha abordagem para cada projeto é orientada pela resolução de problemas e pela busca incessante por soluções inovadoras. 
+                        Estou sempre comprometido em expandir minhas habilidades e enfrentar novos desafios para oferecer soluções completas e eficazes.
+                        <br>Para acessar meu GitHub<br>
+                        <a href="https://github.com/devmgdp" class="saibamais">clique aqui</a>
+                    </p>
+                </div>
+                <div class="column-right">
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>JS</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    
+                    <div class="bars">
+                        <div class="info">
+                            <span>SQL</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    
+                    <div class="bars">
+                        <div class="info">
+                            <span>MYSQL</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>NOSQL</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>GOLANG</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> <!-- Fim da skills -->
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">
+                    <a href="./index.html">Miguel's<span class="part2-logo"> StackScap</span>
+                    </a>
+                </div>
+                
+                <p>Confie em si mesmo</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">About Me</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Skills</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Projetos</h3>
+                </li>
+                <li>
+                    <a href="https://devmgdp.github.io/Project-RegisterAndLogin/" class="footer-link" target="_blank">Register And Login</a>
+                </li>
+                <li>
+                    <a href="https://devmgdp.github.io/Mario-Jump/index.html" class="footer-link" target="_blank">Mario Jump</a>
+                </li>
+                <li>
+                    <a href="https://devmgdp.github.io/Calculator/" class="footer-link" target="_blank">Calculadora</a>
+                </li>
+                <li>
+                    <a href="https://devmgdp.github.io/TechBlog/" class="footer-link" target="_blank">Tech Blog</a>
+                </li>
+                <li>
+                    <a href="https://github.com/devmgdp/lojavirtualnode" class="footer-link" target="_blank">Loja Virtual</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Contato</h3>
+
+                <p>
+                    Coloque seu e-mail abaixo para eu entrar em contato com você
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            Miguel Gonçalves Dias Peixoto 2024 Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/preloader.js"></script>
+
+
+</body>
+
+</html>
