@@ -76,12 +76,6 @@ $("nav a").click(function (e) {
   );
 });
 
-// Block User click in project not complet
-
-$(".link-desen").click(function (e) {
-  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-});
-
 // Função para mostrar ou ocultar o botão dependendo da posição da página
 window.onscroll = function () {
   scrollFunction();
@@ -134,33 +128,5 @@ links.forEach(link => {
       });
     }
   });
-});
-
-
-const translate = document.querySelector(".translate");
-const divAbout = document.querySelector(".div-about");
-const divPort = document.querySelector(".div-portugues");
-const spanAbout = document.querySelector(".span-about");
-const spanPort = document.querySelector(".span-portugues");
-const pAbout = document.querySelector(".p-about");
-const pPortugues = document.querySelector(".about-portugues");
-
-
-let translated = false;
-translate.addEventListener("click", e => {
-  e.preventDefault();
-  if (translated) {
-    pAbout.style.display = "block";
-    pPortugues.style.display = "none";
-    divAbout.style.display = "block";
-    divPort.style.display = "none";
-  } else {
-    pAbout.style.display = "none";
-    pPortugues.style.display = "block"
-    divAbout.style.display = "none";
-    divPort.style.display = "block";
-  }
-
-  translated = !translated;
 });
 

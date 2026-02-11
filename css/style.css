@@ -119,37 +119,8 @@ body {
   padding: 10px;
   transition: background all 0.3s ease-in-out;
 }
+/* NavBar - Fim */
 
-/*sub menu*/
-.max-width ul .navbar-dropdown {
-  display: none;
-  left: 0;
-  position: absolute;
-  background-color: #fafbff;
-  border-radius: 15px;
-
-}
-
-.max-width ul li:hover .navbar-dropdown {
-  display: block;
-}
-
-.max-width ul .navbar-dropdown {
-  width: 150px;
-}
-
-.menu ul .navbar-dropdown li a {
-  display: block;
-}
-
-.menu .navbar-dropdown li a {
-  color: #111;
-  font-size: 16px;
-}
-
-.menu .navbar-dropdown li a:hover {
-  color: #5e90ee;
-}  /* NavBar - Fim */
 
 /* Home - início */
 
@@ -367,6 +338,18 @@ section .title {
   color: #fff;
 }
 
+.projects .project-content img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
 .projects .title::before {
   content: "";
   background-color: #fff;
@@ -379,7 +362,7 @@ section .title {
 }
 
 .projects .title::after {
-  content: "Recentes";
+  content: "my projects";
   width: 120px;
   top: 50px;
 }
@@ -395,12 +378,13 @@ section .title {
 }
 
 .projects .project-content .card {
-  width: calc(33% - 20px);
   background: #222;
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
+
+  min-height: 540px;
   transition: all 0.3s ease;
 }
 
@@ -432,12 +416,7 @@ section .title {
 .projects .project-content .card .text {
   font-size: 25px;
   font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
-.projects .project-content .card {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
+  margin: 10px 0 15px 0;
 }
 
 .div-portugues {
@@ -480,7 +459,7 @@ section .title {
 }
 
 .skills .title::after {
-  content: "que utilizo";
+  content: "that I use";
 }
 
 .skills .skills-content .column-left p {
@@ -813,21 +792,28 @@ footer {
   .about .about-content .column-left img {
     margin-top: 60px;
   }
+  .project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 30px;
+  }
 
   .projects .project-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+
+    min-height: 350px;
+    transition: all 0.3s ease;
   }
 
   .skills .skills-content .column-right,
   .skills .skills-content .column-left {
     width: 100%;
     margin-bottom: 35px;
-  }
-
-  .navbar-dropdown {
-    display: none;
-    opacity: 0;
   }
 }
 
@@ -851,6 +837,8 @@ footer {
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
+  .project-content {     grid-template-columns: repeat(1, 1fr); }
   
   .projects .project-content .card,
   .skills .skills-content .column-right,
