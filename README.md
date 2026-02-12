@@ -5,9 +5,9 @@ Hello how are you? My name is Miguel, I've been a FullStack developer for over 4
 ## 📚 About the project
 My portfolio has sections to showcase my skills, completed projects and later I will add a section to have all my certificates.
 
-![image](https://github.com/devmgdp/my-portfolio/assets/89532007/9c199dd5-8f63-45d2-a9e1-fa619645f95a)
+![image](/img/WebSite-Responsive.png)
 
-To access the website [click here](https://devmgdp.github.io/my-portfolio/)
+To access the website [click here](https://devmgdp.github.io/responsive-portfolio-devmgdp/)
 
 ## 🔍 Comments
 
