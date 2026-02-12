@@ -1,9 +1,16 @@
 # 👋 Welcome To My Portfolio
 
-Hello how are you? My name is Miguel, I've been a FullStack developer for over 4 years, I've been programming since I was 11 years old (I'm currently 15 years old), I'm passionate about this area, and today I come to present to you the first version of my portfolio! I confess that it is a very simple portfolio, but I intend to add many new functions to it by the end of May this year so that it looks really cool!!
+This repository contains my personal portfolio website, built to present my projects, skills, and experience as a developer.
+
+The portfolio was developed with a responsive design, ensuring a good user experience across different screen sizes and devices. It was built using modern and clean front-end practices, focusing on simplicity, performance, and clarity.
+
+The main goal of this portfolio is to give recruiters and developers a clear view of my technical background and the type of projects I enjoy building.
+
+---
 
 ## 📚 About the project
-My portfolio has sections to showcase my skills, completed projects and later I will add a section to have all my certificates.
+This portfolio is an evolving project.  
+New features, improvements, and visual updates may be added over time as I continue learning and refining my skills.
 
 ![image](/img/WebSite-Responsive.png)
 
@@ -12,6 +19,8 @@ To access the website [click here](https://devmgdp.github.io/responsive-portfoli
 ## 🔍 Comments
 
 This is my first portfolio, I will still improve many things.
+
+---
 
 ## 💻 Used Programming Languages
 
@@ -22,3 +31,13 @@ This is my first portfolio, I will still improve many things.
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
 </div>
+
+---
+
+## Live Preview
+If you want to see the portfolio running, feel free to access it via GitHub Pages.
+
+---
+
+## Author
+Developed by **Miguel Peixoto**
